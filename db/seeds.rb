@@ -1,9 +1,51 @@
-# This file should ensure the existence of records required to run the application in every environment (production,
-# development, test). The code here should be idempotent so that it can be executed at any point in every environment.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Example:
-#
-#   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
-#     MovieGenre.find_or_create_by!(name: genre_name)
-#   end
+nft_collections = [
+  {
+    name: "Ponta A",
+    contract_adress: "0xe6c1ee6624c6819262f29199dF25A70B2648B818",
+    image: "https://picsum.photos/300/200",
+    creater_name: "ponta ponta",
+    creater_image: "https://placekitten.com/300/200",
+    chain: "Sepolia"
+  },
+  {
+    name: "Ponta B",
+    contract_adress: "0xe6c1ee6624c6819262f29199dF25A70B2648B818",
+    image: "https://picsum.photos/300/200",
+    creater_name: "ponta ponta",
+    creater_image: "https://placekitten.com/300/200",
+    chain: "Sepolia"
+  },
+  {
+    name: "Ponta C",
+    contract_adress: "0xe6c1ee6624c6819262f29199dF25A70B2648B818",
+    image: "https://picsum.photos/300/200",
+    creater_name: "ponta ponta",
+    creater_image: "https://placekitten.com/300/200",
+    chain: "Sepolia"
+  },
+  {
+    name: "Ponta D",
+    contract_adress: "0xe6c1ee6624c6819262f29199dF25A70B2648B818",
+    image: "https://picsum.photos/300/200",
+    creater_name: "ponta ponta",
+    creater_image: "https://placekitten.com/300/200",
+    chain: "Sepolia"
+  },
+  {
+    name: "Ponta E",
+    contract_adress: "0xe6c1ee6624c6819262f29199dF25A70B2648B818",
+    image: "https://picsum.photos/300/200",
+    creater_name: "ponta ponta",
+    creater_image: "https://placekitten.com/300/200",
+    chain: "Sepolia"
+  },
+  {
+    name: "Ponta F",
+    contract_adress: "0xe6c1ee6624c6819262f29199dF25A70B2648B818",
+    image: "https://picsum.photos/300/200",
+    creater_name: "ponta ponta",
+    creater_image: "https://placekitten.com/300/200",
+    chain: "Sepolia"
+  }
+]
+NftCollection.insert_all nft_collections
